@@ -1,0 +1,240 @@
+#root {
+  max-width: 1440px;
+  margin: 0;
+  background-color: var(--color-white);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+p {
+  margin-bottom: 0;
+}
+:root{
+  /* Colores principales */
+  --color-orange: hsl(26, 100%, 55%);
+  --color-pale-orange: hsl(25, 100%, 94%);
+
+  /* Colores neutros */
+  --color-very-dark-blue: hsl(220, 13%, 13%);
+  --color-dark-grayish-blue: hsl(219, 9%, 45%); /*para el tachado*/
+  --color-grayish-blue: hsl(220, 14%, 75%);
+  --color-light-grayish-blue: hsl(223, 64%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsla(0, 0%, 0%, 0.75);
+}
+/**************** NAV ***********************/
+.nav-1005 {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--color-grayish-blue) solid;
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 75px;
+}
+
+.logo {
+  width: 170px;
+}
+
+.ul-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 40px;
+}
+
+.navigation-item {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 60px;
+  cursor: pointer;
+}
+/***************** MAIN *********************/
+.main-cont{
+  padding: 40px 0px;
+}
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+}
+.text-container{
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.text-container span{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+.text-container h1{
+  font-weight: 700;
+  color: var(--color-very-dark-blue);
+  width: 400px;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-description{
+  width: 450px;
+  font-weight: 400;
+}
+.product-price-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  justify-content: space-between;
+}
+.product-price{
+  color: var(--color-very-dark-blue);
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+}
+.product-discount{
+  color: var(--color-orange);
+  background-color: var(--color-pale-orange);
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.product-original-price{
+  font-weight: 700;
+  color: var(--color-grayish-blue);
+  text-decoration: line-through;
+}
+
+.image-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.image-wrapper img{
+  width: 400px;
+  border-radius: 16px;
+}
+.product-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+.product-image img{
+  width: 80px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.product-actions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 450px;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.rating-container{
+  background-color: var(--color-light-grayish-blue);
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  padding: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.rating-icon{
+  cursor: pointer;
+}
+.rating-value p{
+  font-weight: 700;
+  margin: 0;
+}
+.icon-button{
+  padding: 12px 80px;
+  border-radius: 10px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  border: none;
+}
+
+/******** CART **********/
+.hr-cart{
+  border-bottom: var(--color-grayish-blue) solid 1px;
+}
+.offcn-container{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.offcn-image-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.offcn-product-image{
+  width: 80px;
+  border-radius: 10px;
+}
+.offcn-product-details{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+.offcn-product-name{
+  font-weight: 400;
+  margin: 0;
+  
+  font-size: 18px;
+}
+.offcn-product-count{
+   font-size: 18px;
+   margin: 0;
+}
+.offcn-checkout-button{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 12px 150px;
+  border-radius: 10px;
+  border:none;
+}
+.offcn-icon-image{
+  cursor: pointer;
+}
+.result-count{
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+
