@@ -60,6 +60,21 @@ p {
   align-items: center;
   gap: 40px;
 }
+.cart-cont{
+  display: flex;
+  flex-direction: row;
+  gap:2px;  
+  cursor: pointer;
+}
+.or-count{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
 
 .cart-icon {
   cursor: pointer;
