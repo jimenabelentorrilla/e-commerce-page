@@ -1,5 +1,5 @@
 #root {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0;
   background-color: var(--color-white);
   font-family: 'Kumbh Sans', sans-serif;
@@ -11,7 +11,7 @@ p {
 :root{
   /* Colores principales */
   --color-orange: hsl(26, 100%, 55%);
-  --color-pale-orange: hsl(25, 100%, 94%);
+  --color-pale-orange: hsl(25, 100%, 78%);
 
   /* Colores neutros */
   --color-very-dark-blue: hsl(220, 13%, 13%);
@@ -27,10 +27,12 @@ p {
   flex-direction: row;
   height: 120px;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px var(--color-grayish-blue) solid;
+  justify-content: space-around;
+  border-bottom: 0.0625rem var(--color-grayish-blue) solid;
 }
-
+.active{
+  opacity: 0.8;
+}
 .nav-flex {
   display: flex;
   flex-direction: row;
@@ -50,8 +52,11 @@ p {
 }
 
 .navigation-item {
-  font-size: 16px;
+  font-size: 1em;
   cursor: pointer;
+}
+.navigation-item:hover{
+  color: var(--color-orange);
 }
 
 .icons-container {
@@ -70,8 +75,8 @@ p {
   background-color: var(--color-orange);
   color: var(--color-white);
   border-radius: 50px;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   display: flex;
   justify-content: center;
 }
@@ -86,7 +91,7 @@ p {
 }
 /***************** MAIN *********************/
 .main-cont{
-  padding: 40px 0px;
+  padding: 2.5rem 0rem;
 }
 .image-container{
   display: flex;
@@ -95,21 +100,21 @@ p {
   gap:40px;
 }
 .text-container{
-  padding: 20px 0px;
+  padding: 1.25rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .text-container span{
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   font-weight: 700;
   color: var(--color-orange);
 }
 .text-container h1{
   font-weight: 700;
   color: var(--color-very-dark-blue);
-  width: 400px;
+  width: 25rem;
 }
 .product-details{
   display: flex;
@@ -117,27 +122,27 @@ p {
   gap: 10px;
 }
 .product-description{
-  width: 450px;
+  width: 28.125rem;
   font-weight: 400;
 }
 .product-price-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 150px;
+  width: 9.375rem;
   justify-content: space-between;
 }
 .product-price{
   color: var(--color-very-dark-blue);
   font-weight: 700;
-  font-size: 25px;
+  font-size: 1.5625rem;
   margin: 0;
 }
 .product-discount{
   color: var(--color-orange);
   background-color: var(--color-pale-orange);
   font-weight: 700;
-  padding: 2px 8px;
+  padding: 0.125rem 0.5rem;
   border-radius: 5px;
 }
 .product-original-price{
@@ -151,17 +156,17 @@ p {
   justify-content: center;
 }
 .image-wrapper img{
-  width: 400px;
+  width: 25rem;
   border-radius: 16px;
 }
 .product-images{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 400px;
+  width: 25rem;
 }
 .product-image img{
-  width: 80px;
+  width: 5rem;
   border-radius: 16px;
   cursor: pointer;
 }
@@ -169,16 +174,16 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 450px;
+  width: 28.125rem;
   justify-content: space-between;
-  padding: 40px 0px;
+  padding: 2.5rem 0rem;
 }
 .rating-container{
   background-color: var(--color-light-grayish-blue);
-  width: 150px;
+  width: 9.375rem;
   display: flex;
   flex-direction: row;
-  padding: 18px;
+  padding: 1.125rem;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 10px;
@@ -191,12 +196,22 @@ p {
   margin: 0;
 }
 .icon-button{
-  padding: 12px 80px;
+  padding: 0.75rem 5rem;
   border-radius: 10px;
   background-color: var(--color-orange);
   color: var(--color-white);
   font-weight: 700;
   border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.icon-button p{
+  margin: 0;
+}
+.icon-button:hover{
+  background-color: var(--color-pale-orange);
 }
 
 /******** CART **********/
@@ -217,7 +232,7 @@ p {
 }
 
 .offcn-product-image{
-  width: 80px;
+  width: 5rem;
   border-radius: 10px;
 }
 .offcn-product-details{
@@ -232,7 +247,7 @@ p {
   font-size: 18px;
 }
 .offcn-product-count{
-   font-size: 18px;
+   font-size: 1,125rem;
    margin: 0;
 }
 .offcn-checkout-button{
@@ -248,8 +263,17 @@ p {
 }
 .result-count{
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1,125rem;
   margin: 0;
 }
-
+.empt-flex{
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+}
+.empt-par{
+  font-size: 18px;
+  font-weight: 700;
+}
 
