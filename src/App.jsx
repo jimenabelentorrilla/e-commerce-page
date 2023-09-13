@@ -22,6 +22,7 @@ import Plus from "./assets/icon-plus.svg";
 import IconDelete from "./assets/icon-delete.svg";
 import Logo from "./assets/logo.svg";
 import Cart from "./assets/icon-cart.svg";
+import Menu from "./assets/icon-menu.svg";
 import Avatar from "./assets/image-avatar.png";
 
 function App() {
@@ -39,6 +40,18 @@ function App() {
         setFoto(fotos[index].foto);
         
     };
+
+
+
+
+    const [showNav, setShowNav] = useState(false);
+
+    const handleCloseNav = () => setShowNav(false);
+    const handleShowNav = () => setShowNav(true);
+
+
+
+
 
     const fotos = [
         {
@@ -90,6 +103,9 @@ function App() {
             <Col>
                 <div className="nav-1005">
                     <div className="nav-flex">
+                        <div className="menu-hmb">
+                            <img src={Menu} onClick={handleShowNav}/>
+                        </div>
                         <div>
                             <img src={Logo} className="logo"/>
                         </div>
@@ -117,10 +133,11 @@ function App() {
                         </div>
                     </div>
                 </div>
+                
             </Col>
         </Row>
         <Row className='main-cont'>
-            <Col>
+            <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className="image-container">
                         <div className="image-wrapper">
                             <img src={foto}/>
@@ -138,8 +155,8 @@ function App() {
                         </div>
                     </div>
             </Col>
-            <Col>
-                <div>
+            <Col sm={12} md={12} lg={6} xl={6} xxl={6} className="image-container">
+                <div >
                     <div className="text-container">
                         <span>Sneaker Company</span>
                         <h1>Fall Limited Edition Sneakers</h1>
@@ -176,6 +193,7 @@ function App() {
             </Col>
         </Row>
     </Container>
+
     <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header className='hr-cart' closeButton>
             <Offcanvas.Title>Cart</Offcanvas.Title>
@@ -218,6 +236,20 @@ function App() {
             <Toast.Body>Your product has been added to the cart!</Toast.Body>
         </Toast>
     </ToastContainer>
+    <Offcanvas show={showNav} onHide={handleCloseNav}>
+        <Offcanvas.Header closeButton>
+            
+        </Offcanvas.Header>
+            <Offcanvas.Body>
+            <ul className="ul-flex-mb">
+                <li className="navigation-item-mb">Collections</li>
+                <li className="navigation-item-mb">Men</li>
+                <li className="navigation-item-mb">Women</li>
+                <li className="navigation-item-mb">About</li>
+                <li className="navigation-item-mb">Contact</li>
+            </ul>
+        </Offcanvas.Body>
+    </Offcanvas>
     </>
 );
 }
